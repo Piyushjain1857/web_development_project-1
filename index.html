@@ -9,7 +9,7 @@
 <body>
 <!-- Header -->
 <header>
-  <div class="header">
+  <div id="header">
     <p>Welcome to a Professional Health Care</p>
     <div class="info">
       <span>📞 987-654-3210</span>
@@ -21,14 +21,15 @@
 
 <!--  Nav-bar -->
 <section class="navbar">
-    <div class="logo"><span class="h-box">H</span>ealth Center</div>
+    <div class="logo"><a href="#header"><span class="h-box">H</span>ealth Center</a></div>
     <nav >
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Doctors</a>
-        <a href="#">News</a>
-        <a href="#">Contact</a>
-        <button>Make an appointment</button>
+        <a href="#header">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#container-doctors">Doctors</a>
+        <a href="#container-news">News</a>
+        <a href="#appointment">Contact</a>
+        <a href="#appointment"><button>Make an appointment</button></a>
+        
     </nav>
   </section>
   
@@ -60,7 +61,7 @@
   </section>
 
 <!-- About Us -->
-<section class="about-us">
+<section id="about-us">
     <div class="text-about-us">
         <h1>Welcome to Your <span class="h-box-black">H</span>ealth</h1>
         <h1>Center</h1>
@@ -78,7 +79,7 @@
   </section>
 
 <!-- Doctors -->
-<section class="container-doctors">
+<section id="container-doctors">
     <div class="text-doctors">
       <h1>Our Doctors</h1>
     </div>
@@ -123,7 +124,7 @@
   </section>
 
 <!-- latest news -->
-<section class="container-news">
+<section id="container-news">
     <div class="latest-news">
       <h1>Latest News</h1>
     </div>
@@ -183,7 +184,7 @@
 </section>
 
 <!-- Appointment -->
-<section class="appointment">
+<section id="appointment">
   <div class="wrap">
     <div class="left">
       <img src="images/appointment-image.jpg" alt="">

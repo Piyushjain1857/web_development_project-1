@@ -13,7 +13,7 @@ header {
   
 }
 
-.header {
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,10 +38,15 @@ header {
 }
 
 .logo {
-  color: #333;
-  font-size: 18px;
   margin-right: 650px;
 }
+
+.logo a{
+  text-decoration: none;
+  color: #333;
+  font-size: 22px;
+}
+
 
 .h-box {
   background: #a5c937;
@@ -121,7 +126,7 @@ button:hover {
 
 /* about section */
 
-.about-us{
+#about-us{
   background-image: url(./images/about-bg.jpg);
   background-position: top;
   height: 100vh;
@@ -218,7 +223,7 @@ button:hover {
 }
 
 /* latest news */
-.container-news{
+#container-news{
   background-color: #b1a2a2;
   height: 100vh;
   padding-top: 80px;
@@ -287,7 +292,7 @@ button:hover {
 }
 
 /* make a appointment */
-.appointment {
+#appointment {
   padding: 40px 0;
 }
 
