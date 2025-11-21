@@ -382,6 +382,19 @@ button {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-
 }
 
+.contact-info p a{
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-info{
+  font-size: larger;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.footer2{
+  padding-left: 40px;
+}
