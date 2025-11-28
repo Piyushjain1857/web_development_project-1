@@ -7,5 +7,4 @@ function showSlide() {
   });
   index = (index + 1) % slides.length;
 }
-
 setInterval(showSlide, 4000);
