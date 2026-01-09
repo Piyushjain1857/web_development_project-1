@@ -1,8 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
   color: #666;
   font-size: 12px;
   padding: 10px 60px;
-  
+
 }
 
 #header {
@@ -23,6 +23,7 @@ header {
   display: flex;
   gap: 25px;
 }
+
 /* navbar */
 .navbar {
   border-bottom: 1px solid #eee;
@@ -41,7 +42,7 @@ header {
   margin-right: 550px;
 }
 
-.logo a{
+.logo a {
   text-decoration: none;
   color: #333;
   font-size: 22px;
@@ -83,7 +84,7 @@ button:hover {
 .slider {
   position: relative;
   width: 100%;
-  height: 100vh;       
+  height: 100vh;
   /* overflow: hidden;  */
 }
 
@@ -126,7 +127,7 @@ button:hover {
 
 /* about section */
 
-#about-us{
+#about-us {
   background-image: url(./images/about-bg.jpg);
   background-position: top;
   height: 100vh;
@@ -168,6 +169,7 @@ button:hover {
   font-size: 14px;
   color: #777;
 }
+
 /* doctors */
 .text-doctors {
   padding: 50px 0 0 30px;
@@ -193,7 +195,7 @@ button:hover {
 
 .doctor-box img {
   width: 100%;
-  height:750px;
+  height: 750px;
   object-fit: cover;
   display: block;
 }
@@ -223,12 +225,13 @@ button:hover {
 }
 
 /* latest news */
-#container-news{
+#container-news {
   background-color: #b1a2a2;
   height: 100vh;
   padding-top: 80px;
 }
-.latest-news{
+
+.latest-news {
   padding-top: 50px;
   text-align: center;
   font-size: 30px;
@@ -254,8 +257,8 @@ button:hover {
 
 .news-box img {
   width: 100%;
-  height:250px;
-  object-fit:unset ;
+  height: 250px;
+  object-fit: unset;
   display: block;
 }
 
@@ -285,7 +288,7 @@ button:hover {
   display: flex;
 }
 
-.news-doctor img{
+.news-doctor img {
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -310,7 +313,7 @@ button:hover {
 
 }
 
-.right{
+.right {
   width: 50%;
 }
 
@@ -319,7 +322,7 @@ button:hover {
   margin: 100px 0 20px 0;
 }
 
-.right p{
+.right p {
   font-size: larger;
 }
 
@@ -329,13 +332,17 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.field, .field-full {
+.field,
+.field-full {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
   font-size: larger;
   margin: 15px 0 5px 0;
   padding: 8px;
@@ -346,16 +353,18 @@ button {
   margin-top: 15px;
   cursor: pointer;
 }
+
 /* google map */
-#google-map iframe{
+#google-map iframe {
   height: 100vh;
   width: 100%;
 }
 
 /* footer */
-#footer{
+#footer {
   height: 50vh;
 }
+
 .footer-container {
   display: flex;
   gap: 50px;
@@ -363,11 +372,11 @@ button {
   justify-content: center;
 }
 
-.footer-box{
+.footer-box {
   width: 25%;
 }
 
-.footer-box h2{
+.footer-box h2 {
   font-weight: bold;
   padding: 100px 0 20px 0;
 }
@@ -384,18 +393,18 @@ button {
   border-radius: 50%;
 }
 
-.contact-info p a{
+.contact-info p a {
   text-decoration: none;
   color: #000;
 }
 
-.contact-info{
+.contact-info {
   font-size: larger;
   margin-top: 20px;
   padding-left: 20px;
 }
 
-.footer2{
+.footer2 {
   padding-left: 40px;
 }
 
