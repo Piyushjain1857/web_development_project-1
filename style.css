@@ -462,12 +462,12 @@ button {
     padding: 40px 0;
   }
 
-  .text-about-us {
+      .text-about-us {
     width: 90%;
     padding: 0 20px;
   }
 
-  .text-about-us h1 {
+      .text-about-us h1 {
     font-size: 30px;
   }
 
@@ -573,6 +573,31 @@ button {
 
   .doctor-box,
   .news-box {
+    width: 45%;
+  }
+    
+  
+    .doctor-box img {
+    height: 500px;
+  }
+
+  .wrap {
+    flex-direction: column;
+  }
+
+      .right {
+    width: 100%;
+  }
+
+  .right h2 {
+    font-size: 48px;
+  }
+
+      .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-box {
     width: 45%;
   }
 }
