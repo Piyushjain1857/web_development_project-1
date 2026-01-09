@@ -546,3 +546,33 @@ button {
     padding-top: 40px;
   }
 }
+
+@media (max-width: 1024px) {
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .text h1 {
+    font-size: 40px;
+  }
+
+  .text-about-us {
+    width: 70%;
+    padding-left: 50px;
+  }
+
+  .doctors,
+  .news {
+    flex-wrap: wrap;
+  }
+
+  .doctor-box,
+  .news-box {
+    width: 45%;
+  }
+}
