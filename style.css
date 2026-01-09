@@ -398,3 +398,142 @@ button {
 .footer2{
   padding-left: 40px;
 }
+
+@media (max-width: 768px) {
+
+  /* Header */
+  header {
+    padding: 10px 15px;
+  }
+
+  #header {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Slider */
+  .slider {
+    height: 70vh;
+  }
+
+  .text h1 {
+    font-size: 28px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  /* About Us */
+  #about-us {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .text-about-us {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .text-about-us h1 {
+    font-size: 30px;
+  }
+
+  /* Doctors */
+  .doctors {
+    flex-direction: column;
+    padding: 0 20px 40px;
+  }
+
+  .doctor-box {
+    width: 100%;
+  }
+
+  .doctor-box img {
+    height: 400px;
+  }
+
+  /* News */
+  #container-news {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .news {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .news-box {
+    width: 100%;
+  }
+
+  /* Appointment */
+  .wrap {
+    flex-direction: column;
+  }
+
+  .left img {
+    height: auto;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right h2 {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+
+  .row2 {
+    flex-direction: column;
+  }
+
+  /* Map */
+  #google-map iframe {
+    height: 60vh;
+  }
+
+  /* Footer */
+  #footer {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .footer-box {
+    width: 100%;
+  }
+
+  .footer-box h2 {
+    padding-top: 40px;
+  }
+}
