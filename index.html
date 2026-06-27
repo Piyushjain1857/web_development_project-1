@@ -2,307 +2,495 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Health-Medical Website</title>
-	<link rel="stylesheet" href="./style.css">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HealthCenter – Premier medical care with world-class doctors in Cardiology, General Health, and more. Book your appointment today.">
+  <title>HealthCenter – Premier Medical Care</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-
 <body>
-	<!-- Header -->
-	<header>
-		<div id="header">
-			<p>Welcome to a Professional Health Care</p>
-			<div class="info">
-				<span>📞 987-654-3210</span>
-				<span>📅 6:00 AM - 10:00 PM (Mon-Fri)</span>
-				<span>✉️ Healhcare@company.com</span>
-			</div>
-		</div>
-	</header>
 
-	<!--  Nav-bar -->
-	<section class="navbar">
-		<div class="logo"><a href="#header"><span class="h-box">H</span>ealth Center</a></div>
-		<nav>
-			<a href="#header">Home</a>
-			<a href="#about-us">About Us</a>
-			<a href="#container-doctors">Doctors</a>
-			<a href="#container-news">News</a>
-			<a href="#appointment">Contact</a>
-			<a href="#appointment"><button>Make an appointment</button></a>
-		</nav>
-	</section>
+  <!-- ========= TOP BAR ========= -->
+  <div class="topbar" id="top">
+    <div class="topbar-inner">
+      <span><i class="fa-solid fa-phone"></i> 987-654-3210</span>
+      <span><i class="fa-regular fa-clock"></i> Mon–Fri: 6:00 AM – 10:00 PM</span>
+      <span><i class="fa-regular fa-envelope"></i> healthcare@healthcenter.com</span>
+    </div>
+  </div>
 
-	<!-- Carosoul -->
-	<section class="slider">
-		<div class="slide active">
-			<img src="images/slider1.jpg" alt="">
-			<div class="text">
-				<p>LET'S MAKE YOUR LIFE HAPPIER</p>
-				<h1>Healthy Living</h1>
-			</div>
-		</div>
+  <!-- ========= NAVBAR ========= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#top" class="logo" aria-label="HealthCenter Home">
+        <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+        <span class="logo-text">Health<strong>Center</strong></span>
+      </a>
 
-		<div class="slide">
-			<img src="images/slider2.jpg" alt="">
-			<div class="text">
-				<p>YOUR HEALTH IS OUR PRIORITY</p>
-				<h1>Better Care</h1>
-			</div>
-		</div>
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-		<div class="slide">
-			<img src="images/slider3.jpg" alt="">
-			<div class="text">
-				<p>KEEP SMILING & STAY FIT</p>
-				<h1>Live Strong</h1>
-			</div>
-		</div>
-	</section>
+      <div class="nav-links" id="nav-links">
+        <a href="#top" class="nav-link active">Home</a>
+        <a href="#about-us" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#container-doctors" class="nav-link">Doctors</a>
+        <a href="#container-news" class="nav-link">News</a>
+        <a href="#appointment" class="nav-link">Contact</a>
+        <a href="#appointment" class="btn-nav">
+          <i class="fa-solid fa-calendar-check"></i> Book Appointment
+        </a>
+      </div>
+    </div>
+  </nav>
 
-	<!-- About Us -->
-	<section id="about-us">
-		<div class="text-about-us">
-			<h1>Welcome to Your <span class="h-box-black">H</span>ealth</h1>
-			<h1>Center</h1>
-			<p>Aenean luctus lobortis tellus, vel ornare enim molestie condimentum. Curabitur lacinia nisi vitae
-				velit
-				volutpat venenatis.</p>
-			<p>Sed a dignissim lacus. Quisque fermentum est non orci commodo, a luctus urna mattis. Ut placerat,
-				diam a tempus
-				vehicula.</p>
+  <!-- ========= HERO SLIDER ========= -->
+  <section class="slider" id="hero" aria-label="Hero Slideshow">
+    <div class="slide active">
+      <img src="images/slider1.jpg" alt="Healthy Living">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <p class="slide-tag"><i class="fa-solid fa-star"></i> Trusted Healthcare Since 1995</p>
+        <h1>Healthy Living<br><span>Starts Here</span></h1>
+        <p class="slide-sub">Expert care, compassionate treatment, outstanding outcomes — all under one roof.</p>
+        <div class="slide-btns">
+          <a href="#appointment" class="btn-primary">Book Appointment</a>
+          <a href="#about-us" class="btn-ghost">Learn More</a>
+        </div>
+      </div>
+    </div>
 
-			<div class="doctor">
-				<img src="images/author-image.jpg">
-				<div>
-					<h3>Dr. Neil Jackson</h3>
-					<span>General Principal</span>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="slide">
+      <img src="images/slider2.jpg" alt="Better Care">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <p class="slide-tag"><i class="fa-solid fa-shield-heart"></i> Your Health Is Our Priority</p>
+        <h1>Better Care,<br><span>Better Life</span></h1>
+        <p class="slide-sub">World-class specialists dedicated to your well-being and long-term health.</p>
+        <div class="slide-btns">
+          <a href="#appointment" class="btn-primary">Book Appointment</a>
+          <a href="#container-doctors" class="btn-ghost">Our Doctors</a>
+        </div>
+      </div>
+    </div>
 
-	<!-- Doctors -->
-	<section id="container-doctors">
-		<div class="text-doctors">
-			<h1>Our Doctors</h1>
-		</div>
+    <div class="slide">
+      <img src="images/slider3.jpg" alt="Live Strong">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <p class="slide-tag"><i class="fa-solid fa-dumbbell"></i> Keep Smiling & Stay Fit</p>
+        <h1>Live Strong,<br><span>Feel Great</span></h1>
+        <p class="slide-sub">Preventive medicine, cutting-edge diagnostics, and personalized care plans.</p>
+        <div class="slide-btns">
+          <a href="#appointment" class="btn-primary">Book Appointment</a>
+          <a href="#services" class="btn-ghost">Our Services</a>
+        </div>
+      </div>
+    </div>
 
-		<div class="doctors">
-			<div class="doctor-box">
-				<img src="images/team-image1.jpg">
-				<div class="doctor-info">
-					<h3>Nate Baston</h3>
-					<p>General Principal</p>
-					<div class="doctor-contact">
-						📞 010-020-0120 <br>
-						✉️ general@company.com
-					</div>
-				</div>
-			</div>
+    <!-- Slider Controls -->
+    <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Previous Slide">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="slider-arrow slider-next" id="sliderNext" aria-label="Next Slide">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
 
-			<div class="doctor-box">
-				<img src="images/team-image2.jpg">
-				<div class="doctor-info">
-					<h3>Jason Stewart</h3>
-					<p>Pregnancy</p>
-					<div class="doctor-contact">
-						📞 010-070-0170 <br>
-						✉️ pregnancy@company.com
-					</div>
-				</div>
-			</div>
+    <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Slide Navigation"></div>
+  </section>
 
-			<div class="doctor-box">
-				<img src="images/team-image3.jpg">
-				<div class="doctor-info">
-					<h3>Miasha Nakahara</h3>
-					<p>Cardiology</p>
-					<div class="doctor-contact">
-						📞 010-040-0140 <br>
-						✉️ cardio@company.com
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <!-- ========= STATS STRIP ========= -->
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <i class="fa-solid fa-user-doctor"></i>
+        <div>
+          <span class="stat-num" data-target="120">0</span><span>+</span>
+          <p>Expert Doctors</p>
+        </div>
+      </div>
+      <div class="stat-item">
+        <i class="fa-solid fa-hospital"></i>
+        <div>
+          <span class="stat-num" data-target="25">0</span><span>+</span>
+          <p>Departments</p>
+        </div>
+      </div>
+      <div class="stat-item">
+        <i class="fa-solid fa-face-smile"></i>
+        <div>
+          <span class="stat-num" data-target="50000">0</span><span>+</span>
+          <p>Happy Patients</p>
+        </div>
+      </div>
+      <div class="stat-item">
+        <i class="fa-solid fa-award"></i>
+        <div>
+          <span class="stat-num" data-target="30">0</span><span>+</span>
+          <p>Years of Excellence</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<!-- latest news -->
-	<section id="container-news">
-		<div class="latest-news">
-			<h1>Latest News</h1>
-		</div>
+  <!-- ========= ABOUT US ========= -->
+  <section id="about-us" class="about-section">
+    <div class="about-inner">
+      <div class="about-img-wrap">
+        <img src="images/about-bg.jpg" alt="About HealthCenter" class="about-img">
+        <div class="about-badge">
+          <i class="fa-solid fa-circle-check"></i>
+          <div>
+            <strong>ISO Certified</strong>
+            <span>Excellence in Care</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag">About Us</p>
+        <h2 class="section-title">Welcome to Your <em>Health Center</em></h2>
+        <p class="about-desc">At HealthCenter, we combine advanced medical technology with compassionate care to deliver outstanding patient outcomes. Our multidisciplinary team of world-class specialists works tirelessly to ensure every patient receives personalised, evidence-based treatment.</p>
+        <p class="about-desc">From preventive screenings to complex surgical procedures, our state-of-the-art facility is equipped to handle all aspects of your health journey — because your well-being is our highest calling.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check-circle"></i> 24/7 Emergency Services</li>
+          <li><i class="fa-solid fa-check-circle"></i> Advanced Diagnostic Technology</li>
+          <li><i class="fa-solid fa-check-circle"></i> Internationally Trained Specialists</li>
+          <li><i class="fa-solid fa-check-circle"></i> Patient-Centered Approach</li>
+        </ul>
+        <div class="about-author">
+          <img src="images/author-image.jpg" alt="Dr. Neil Jackson">
+          <div>
+            <strong>Dr. Neil Jackson</strong>
+            <span>Chief Medical Officer</span>
+          </div>
+          <div class="signature">Dr. Neil Jackson</div>
+        </div>
+        <a href="#appointment" class="btn-primary">Schedule a Consultation</a>
+      </div>
+    </div>
+  </section>
 
-		<div class="news">
-			<div class="news-box">
-				<img src="images/news-image1.jpg">
-				<div class="news-info">
-					<p class="date">March 08, 2018</p>
-					<h2>About Amazing Technology</h2>
-					<p>Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.</p>
-					<div class="news-contact">
-						<div class="news-doctor">
-							<img src="images/author-image.jpg">
-						</div>
-						<div class="news-p">
-							<p>Jeremie Carlson <br></p>
-							<p>CEO / Founder</p>
-						</div>
-					</div>
-				</div>
-			</div>
+  <!-- ========= SERVICES ========= -->
+  <section id="services" class="services-section">
+    <div class="section-header">
+      <p class="section-tag">What We Offer</p>
+      <h2 class="section-title">Our Medical <em>Services</em></h2>
+      <p class="section-sub">Comprehensive healthcare solutions tailored to meet every need at every stage of life.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        <h3>Cardiology</h3>
+        <p>Advanced cardiac diagnostics, interventional procedures, and preventive heart care.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+        <h3>Neurology</h3>
+        <p>Expert diagnosis and treatment of neurological conditions using cutting-edge technology.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-bone"></i></div>
+        <h3>Orthopedics</h3>
+        <p>Comprehensive bone, joint, and muscle care — from diagnosis to rehabilitation.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
+        <h3>Pediatrics</h3>
+        <p>Gentle, family-friendly healthcare for infants, children, and adolescents.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-microscope"></i></div>
+        <h3>Diagnostics</h3>
+        <p>State-of-the-art labs with rapid turnaround for accurate and reliable results.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-tooth"></i></div>
+        <h3>Dental Care</h3>
+        <p>Complete oral health services from routine cleanings to cosmetic dentistry.</p>
+      </div>
+    </div>
+  </section>
 
-			<div class="news-box">
-				<img src="images/news-image2.jpg">
-				<div class="news-info">
-					<p class="date">February 20, 2018</p>
-					<h2>Introducing a new healing process</h2>
-					<p>Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam et est ligula.</p>
-					<div class="news-contact">
-						<div class="news-doctor">
-							<img src="images/author-image.jpg">
-						</div>
-						<div class="news-p">
-							<p>Jason Stewart<br></p>
-							<p>General Director</p>
-						</div>
-					</div>
-				</div>
-			</div>
+  <!-- ========= DOCTORS ========= -->
+  <section id="container-doctors" class="doctors-section">
+    <div class="section-header light">
+      <p class="section-tag">Meet The Team</p>
+      <h2 class="section-title">Our Expert <em>Doctors</em></h2>
+      <p class="section-sub">Board-certified physicians with decades of combined experience across every specialty.</p>
+    </div>
+    <div class="doctors-grid">
+      <div class="doctor-card reveal">
+        <div class="doctor-img-wrap">
+          <img src="images/team-image1.jpg" alt="Dr. Nate Baston">
+          <div class="doctor-social">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Nate Baston</h3>
+          <span class="specialty">General Physician</span>
+          <div class="doctor-contact-row">
+            <span><i class="fa-solid fa-phone"></i> 010-020-0120</span>
+            <span><i class="fa-solid fa-envelope"></i> general@healthcenter.com</span>
+          </div>
+        </div>
+      </div>
 
-			<div class="news-box">
-				<img src="images/news-image3.jpg">
-				<div class="news-info">
-					<p class="date">January 27, 2018</p>
-					<h2>Review Annual Medical Research</h2>
-					<p>Vivamus non nulla semper diam cursus maximus. Pellentesque dignissim.</p>
-					<div class="news-contact">
-						<div class="news-doctor">
-							<img src="images/author-image.jpg">
-						</div>
-						<div class="news-p">
-							<p>Andrio Abero <br></p>
-							<p>Online Advertising</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+      <div class="doctor-card reveal">
+        <div class="doctor-img-wrap">
+          <img src="images/team-image2.jpg" alt="Dr. Jason Stewart">
+          <div class="doctor-social">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Jason Stewart</h3>
+          <span class="specialty">Obstetrics & Gynecology</span>
+          <div class="doctor-contact-row">
+            <span><i class="fa-solid fa-phone"></i> 010-070-0170</span>
+            <span><i class="fa-solid fa-envelope"></i> obgyn@healthcenter.com</span>
+          </div>
+        </div>
+      </div>
 
-	<!-- Appointment -->
-	<section id="appointment">
-		<div class="wrap">
-			<div class="left">
-				<img src="images/appointment-image.jpg" alt="">
-			</div>
-			<div class="right">
-				<h2>Make an Appointment</h2>
-				<form>
-					<div class="row2">
-						<div class="field">
-							<label>Name</label>
-							<input type="text" placeholder="Full Name">
-						</div>
+      <div class="doctor-card reveal">
+        <div class="doctor-img-wrap">
+          <img src="images/team-image3.jpg" alt="Dr. Miasha Nakahara">
+          <div class="doctor-social">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Miasha Nakahara</h3>
+          <span class="specialty">Cardiologist</span>
+          <div class="doctor-contact-row">
+            <span><i class="fa-solid fa-phone"></i> 010-040-0140</span>
+            <span><i class="fa-solid fa-envelope"></i> cardio@healthcenter.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						<div class="field">
-							<label>Email</label>
-							<input type="email" placeholder="Your Email">
-						</div>
-					</div>
-					<div class="row2">
-						<div class="field">
-							<label>Select Date</label>
-							<input type="date">
-						</div>
-						<div class="field">
-							<label>Select Department</label>
-							<select>
-								<option>General Health</option>
-								<option>Cardiology</option>
-								<option>Dental</option>
-								<option>Medical Research</option>
-							</select>
-						</div>
-					</div>
-					<div class="field-full">
-						<label>Phone Number</label>
-						<input type="tel" placeholder="Phone">
-						<label>Additional Message</label>
-						<textarea rows="5" placeholder="Message"></textarea>
-						<button type="submit">Submit Button</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</section>
+  <!-- ========= LATEST NEWS ========= -->
+  <section id="container-news" class="news-section">
+    <div class="section-header">
+      <p class="section-tag">Stay Informed</p>
+      <h2 class="section-title">Latest <em>News</em></h2>
+      <p class="section-sub">Stay up to date with the latest advancements in medicine and wellness.</p>
+    </div>
+    <div class="news-grid">
+      <div class="news-card reveal">
+        <div class="news-img-wrap">
+          <img src="images/news-image1.jpg" alt="About Amazing Technology">
+          <span class="news-date"><i class="fa-regular fa-calendar"></i> March 08, 2024</span>
+        </div>
+        <div class="news-body">
+          <h3>About Amazing Medical Technology</h3>
+          <p>Exploring how AI-powered diagnostics and robotic surgery are revolutionising patient outcomes across specialties.</p>
+          <div class="news-author">
+            <img src="images/author-image.jpg" alt="Jeremie Carlson">
+            <div>
+              <strong>Jeremie Carlson</strong>
+              <span>CEO / Founder</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	<!-- google map -->
-	<section id="google-map">
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.50707315880337!2d77.02903970541293!3d28.465834221649345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d183494e9556d%3A0xb020684abe506bcd!2s255%2F1%2C%20New%20Railway%20Rd%2C%20Mianwali%20Colony%2C%20Sector%2012%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1763197960896!5m2!1sen!2sin"
-			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-			referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</section>
+      <div class="news-card reveal">
+        <div class="news-img-wrap">
+          <img src="images/news-image2.jpg" alt="New Healing Process">
+          <span class="news-date"><i class="fa-regular fa-calendar"></i> February 20, 2024</span>
+        </div>
+        <div class="news-body">
+          <h3>Introducing a New Healing Process</h3>
+          <p>Our research team unveils a breakthrough regenerative therapy protocol that significantly accelerates recovery.</p>
+          <div class="news-author">
+            <img src="images/author-image.jpg" alt="Jason Stewart">
+            <div>
+              <strong>Jason Stewart</strong>
+              <span>General Director</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	<!-- footer -->
-	<footer id="footer">
-		<div class="footer-container">
-			<div class="footer1 footer-box">
-				<h2>Contact Info</h2>
-				<p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit
-					consequat
-					ultricies.</p>
-				<div class="contact-info">
-					<p>📞 +91 859-585-0153</p>
-					<p><a href="#">📧 Piyushjain1857@company.com</a></p>
-				</div>
+      <div class="news-card reveal">
+        <div class="news-img-wrap">
+          <img src="images/news-image3.jpg" alt="Annual Medical Research">
+          <span class="news-date"><i class="fa-regular fa-calendar"></i> January 27, 2024</span>
+        </div>
+        <div class="news-body">
+          <h3>Annual Medical Research Review</h3>
+          <p>A comprehensive look at the year's most impactful clinical trials and how they shape future treatment protocols.</p>
+          <div class="news-author">
+            <img src="images/author-image.jpg" alt="Andrio Abero">
+            <div>
+              <strong>Andrio Abero</strong>
+              <span>Research Director</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			</div>
-			<div class="footer2 footer-box">
-				<h2>Latest News</h2>
-				<div class="footer-doctor">
-					<img src="images/news-image.jpg">
-					<div>
-						<h3>Dr. Neil Jackson</h3>
-						<span>General Principal</span>
-					</div>
-				</div>
-				<div class="footer-doctor">
-					<img src="images/news-image.jpg">
-					<div>
-						<h3>Dr. Neil Jackson</h3>
-						<span>General Principal</span>
-					</div>
-				</div>
-			</div>
+  <!-- ========= APPOINTMENT ========= -->
+  <section id="appointment" class="appointment-section">
+    <div class="appt-inner">
+      <div class="appt-img">
+        <img src="images/appointment-image.jpg" alt="Make an Appointment">
+        <div class="appt-overlay">
+          <div class="appt-overlay-content">
+            <i class="fa-solid fa-hospital-user"></i>
+            <h3>24 / 7 Emergency</h3>
+            <p>Call us any time for immediate medical assistance</p>
+            <a href="tel:9876543210" class="btn-emergency">
+              <i class="fa-solid fa-phone-volume"></i> +91 987-654-3210
+            </a>
+          </div>
+        </div>
+      </div>
 
-			<div class="footer3 footer-box">
-				<h2>Opening Hours</h2>
-				<p>Monday - Friday 06:00 AM - 10:00 PM</p>
-				<p>Saturday 09:00 AM - 08:00 PM</p>
-				<p>Sunday Closed</p>
-				<div class="footer-btn">
-					<button><i class="fa-brands fa-facebook-f"></i></button>
-					<button><i class="fa-brands fa-twitter"></i></button>
-					<button><i class="fa-brands fa-instagram"></i></button>
-				</div>
-			</div>
-		</div>
-	</footer>
+      <div class="appt-form-wrap">
+        <p class="section-tag">Get in Touch</p>
+        <h2 class="section-title">Make an <em>Appointment</em></h2>
+        <p class="section-sub">Fill in the form below and our team will confirm your appointment within 24 hours.</p>
+        <form id="appointmentForm" class="appt-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="appt-name">Full Name</label>
+              <input id="appt-name" type="text" placeholder="e.g. John Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="appt-email">Email Address</label>
+              <input id="appt-email" type="email" placeholder="e.g. john@email.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="appt-date">Preferred Date</label>
+              <input id="appt-date" type="date" required>
+            </div>
+            <div class="form-group">
+              <label for="appt-dept">Department</label>
+              <select id="appt-dept" required>
+                <option value="" disabled selected>Select department</option>
+                <option>General Health</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+                <option>Dental Care</option>
+                <option>Pediatrics</option>
+                <option>Medical Research</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="appt-phone">Phone Number</label>
+            <input id="appt-phone" type="tel" placeholder="e.g. +91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label for="appt-msg">Additional Message</label>
+            <textarea id="appt-msg" rows="4" placeholder="Describe your symptoms or any special requirements…"></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <i class="fa-solid fa-paper-plane"></i> Submit Appointment
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i> Your appointment has been submitted! We'll contact you shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 
-	<script src="script.js"></script>
+  <!-- ========= GOOGLE MAP ========= -->
+  <section id="google-map" class="map-section" aria-label="Our Location">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.50707315880337!2d77.02903970541293!3d28.465834221649345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d183494e9556d%3A0xb020684abe506bcd!2s255%2F1%2C%20New%20Railway%20Rd%2C%20Mianwali%20Colony%2C%20Sector%2012%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1763197960896!5m2!1sen!2sin"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="HealthCenter Location">
+    </iframe>
+  </section>
+
+  <!-- ========= FOOTER ========= -->
+  <footer id="footer">
+    <div class="footer-inner">
+
+      <div class="footer-col footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+          <span class="logo-text">Health<strong>Center</strong></span>
+        </a>
+        <p>Dedicated to excellence in healthcare delivery, combining the latest medical science with compassionate patient care.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#top"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="#about-us"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+          <li><a href="#container-doctors"><i class="fa-solid fa-angle-right"></i> Our Doctors</a></li>
+          <li><a href="#container-news"><i class="fa-solid fa-angle-right"></i> Latest News</a></li>
+          <li><a href="#appointment"><i class="fa-solid fa-angle-right"></i> Appointments</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <ul class="footer-hours">
+          <li><span>Monday – Friday</span><span>06:00 AM – 10:00 PM</span></li>
+          <li><span>Saturday</span><span>09:00 AM – 08:00 PM</span></li>
+          <li class="closed"><span>Sunday</span><span>Closed</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> 255/1, New Railway Road, Gurugram, Haryana 122001</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+919876543210">+91 987-654-3210</a></li>
+          <li><i class="fa-regular fa-envelope"></i> <a href="mailto:healthcare@healthcenter.com">healthcare@healthcenter.com</a></li>
+          <li><i class="fa-solid fa-stethoscope"></i> Emergency: 24/7</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> HealthCenter. All rights reserved. | Designed with <i class="fa-solid fa-heart" style="color:#e05c72"></i> for your well-being</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
-
-
-
-<!-- scroll-behaviour
-smooth-scroll 
--webkit- -->
